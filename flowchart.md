@@ -1,7 +1,7 @@
  ```mermaid
 
 flowchart TD
-    A[Start] --> B[Tampilkan Menu]
+    A((Start)) --> B[Tampilkan Menu]
     
     B --> C{Pilihan User}
     
@@ -10,7 +10,7 @@ flowchart TD
     C -->|3| F[Custom Cooking<br/>Pilih menu sendiri]
     C -->|4| G[Exit]
     
-    D --> H[Tampilkan Hasil]
+    D --> H[/Tampilkan Hasil/]
     E --> H
     F --> H
     
@@ -18,7 +18,7 @@ flowchart TD
     I -->|Ya| B
     I -->|Tidak| G
     
-    G --> J[End]
+    G --> J(((End)))
     
 
     ```
