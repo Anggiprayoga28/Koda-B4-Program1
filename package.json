@@ -1,0 +1,14 @@
+{
+  "name": "koda-b4-program1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "Node --watch index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.35.0"
+  }
+}
