@@ -6,11 +6,11 @@ flowchart TD
     
     C --> D{User Choice}
     
-    D -->|1| E[Sequential Cooking Mode]
-    D -->|2| F[Parallel Cooking Mode]
-    D -->|3| G[Custom Cooking Mode]
-    D -->|4| H[Exit Application]
-    D -->|false| I[/Show Error Message/]
+    D -->|True| E[Sequential Cooking Mode]
+    D -->|True| F[Parallel Cooking Mode]
+    D -->|True| G[Custom Cooking Mode]
+    D -->|False| H[Exit Application]
+    D -->|False| I[/Show Error Message/]
     
     I --> C
     
@@ -38,10 +38,10 @@ flowchart TD
     G1 --> G2[/User Select Dishes/]
     G2 --> G3{Any Dishes Selected?}
     
-    G3 -->|No| G4[Show No Dishes Message]
+    G3 -->|False| G4[Show No Dishes Message]
     G4 --> J
     
-    G3 -->|Yes| G5[Choose Cooking Mode]
+    G3 -->|True| G5[Choose Cooking Mode]
     G5 --> G6{Sequential or Parallel?}
     
     G6 -->|Sequential| G7[Start Timer]
@@ -58,8 +58,8 @@ flowchart TD
     G15 --> J
     
     J --> K{Continue?}
-    K -->|Yes| C
-    K -->|No| H
+    K -->|True| C
+    K -->|false| H
     
     H --> L[/Show Goodbye Message/]
     L --> M[Close Application]
